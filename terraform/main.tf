@@ -1,5 +1,4 @@
 provider "google" {
-  credentials = file("centering-force-290618-8ea206f7845c.json")
   project     = "centering-force-290618"
   region      = "us-central1"
 }
