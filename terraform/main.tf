@@ -34,7 +34,7 @@ resource "google_compute_instance" "default" {
     env = "dev"
   }
 
-  metadata_startup_script = "${file("/startup")}"
+  metadata_startup_script = "${file("startup")}"
 
   service_account {
     scopes = ["userinfo-email", "compute-ro", "storage-ro"]
